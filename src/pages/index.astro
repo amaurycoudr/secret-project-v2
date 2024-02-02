@@ -107,7 +107,7 @@ const { content, image, subtitle, title } = {
   <>
     <main class="flex flex-col gap-24" style={{ overflow: "unset" }}>
       <ArticleHeaderSection title={title} subtitle={subtitle} image={image} />
-      <FilmsOfTheWeek content={content} client:visible />
+      <FilmsOfTheWeek content={content} client:load />
       <div
         class="z-10 flex w-full flex-col items-center gap-10 self-center bg-gray-950 pb-24 pt-12"
       >
