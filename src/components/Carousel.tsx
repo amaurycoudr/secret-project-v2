@@ -20,7 +20,6 @@ interface CarouselProps<T> {
   CarouselElement: FC<T>;
 }
 
-const INITIAL_INDEX = -1;
 const Carousel = <T extends object>({
   CarouselElement,
   ContentElement,
@@ -28,6 +27,11 @@ const Carousel = <T extends object>({
   classNameWrapperContent,
   className,
 }: CarouselProps<T>) => {
+  const INITIAL_INDEX = -1;
+  const FIRST_INDEX = 0;
+  const LAST_INDEX = content.length - 1;
+  const FINISHED_INDEX = content.length;
+
   const [currentIndex, setCurrentIndex] = useState(INITIAL_INDEX);
   const positionsRef = useRef<Record<number, ElementBorder>>({});
 
@@ -85,13 +89,13 @@ const Carousel = <T extends object>({
     (ev: KeyboardEvent) => {
       if (
         (ev.key === " " || ev.key === "ArrowDown") &&
-        currentIndex < content.length - 1
+        currentIndex < LAST_INDEX
       ) {
-        scrollToElement(Math.min(currentIndex + 1, content.length));
+        scrollToElement(Math.min(currentIndex + 1, LAST_INDEX));
         ev.preventDefault();
       }
-      if (ev.key === "ArrowUp" && currentIndex !== INITIAL_INDEX) {
-        scrollToElement(Math.max(currentIndex - 1, 0));
+      if (ev.key === "ArrowUp" && currentIndex > FIRST_INDEX) {
+        scrollToElement(Math.max(currentIndex - 1, FIRST_INDEX));
         ev.preventDefault();
       }
     },
@@ -133,7 +137,9 @@ const Carousel = <T extends object>({
             key={index}
             currentIndex={currentIndex}
             index={index}
-            isHidden={currentIndex === -1 || currentIndex === content.length}
+            isHidden={
+              currentIndex === INITIAL_INDEX || currentIndex === FINISHED_INDEX
+            }
             onClick={() => {
               scrollToElement(index);
             }}
