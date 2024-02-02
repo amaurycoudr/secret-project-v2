@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProSemibold-Regular.eot");
+  src: local("FreightText Pro Semibold"),
+    local("FreightTextProSemibold-Regular"),
+    url("./assets/fonts/FreightTextProSemibold-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProSemibold-Regular.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProSemibold-Regular.woff") format("woff"),
+    url("./assets/fonts/FreightTextProSemibold-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProBold-Regular.eot");
+  src: local("FreightText Pro Bold"), local("FreightTextProBold-Regular"),
+    url("./assets/fonts/FreightTextProBold-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProBold-Regular.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProBold-Regular.woff") format("woff"),
+    url("./assets/fonts/FreightTextProBold-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProMedium-Regular.eot");
+  src: local("FreightText Pro Medium"), local("FreightTextProMedium-Regular"),
+    url("./assets/fonts/FreightTextProMedium-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProMedium-Regular.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProMedium-Regular.woff") format("woff"),
+    url("./assets/fonts/FreightTextProMedium-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProMedium-Italic.eot");
+  src: local("FreightText Pro Medium Italic"),
+    local("FreightTextProMedium-Italic"),
+    url("./assets/fonts/FreightTextProMedium-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProMedium-Italic.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProMedium-Italic.woff") format("woff"),
+    url("./assets/fonts/FreightTextProMedium-Italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProBlack-Italic.eot");
+  src: local("FreightText Pro Black Italic"),
+    local("FreightTextProBlack-Italic"),
+    url("./assets/fonts/FreightTextProBlack-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProBlack-Italic.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProBlack-Italic.woff") format("woff"),
+    url("./assets/fonts/FreightTextProBlack-Italic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProBook-Italic.eot");
+  src: local("FreightText Pro Book Italic"), local("FreightTextProBook-Italic"),
+    url("./assets/fonts/FreightTextProBook-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProBook-Italic.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProBook-Italic.woff") format("woff"),
+    url("./assets/fonts/FreightTextProBook-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProSemibold-Italic.eot");
+  src: local("FreightText Pro Semibold Italic"),
+    local("FreightTextProSemibold-Italic"),
+    url("./assets/fonts/FreightTextProSemibold-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProSemibold-Italic.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProSemibold-Italic.woff") format("woff"),
+    url("./assets/fonts/FreightTextProSemibold-Italic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProLight-Regular.eot");
+  src: local("FreightText Pro Light"), local("FreightTextProLight-Regular"),
+    url("./assets/fonts/FreightTextProLight-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProLight-Regular.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProLight-Regular.woff") format("woff"),
+    url("./assets/fonts/FreightTextProLight-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProBlack-Regular.eot");
+  src: local("FreightText Pro Black"), local("FreightTextProBlack-Regular"),
+    url("./assets/fonts/FreightTextProBlack-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProBlack-Regular.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProBlack-Regular.woff") format("woff"),
+    url("./assets/fonts/FreightTextProBlack-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProBold-Italic.eot");
+  src: local("FreightText Pro Bold Italic"), local("FreightTextProBold-Italic"),
+    url("./assets/fonts/FreightTextProBold-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProBold-Italic.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProBold-Italic.woff") format("woff"),
+    url("./assets/fonts/FreightTextProBold-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProBook-Regular.eot");
+  src: local("FreightText Pro Book"), local("FreightTextProBook-Regular"),
+    url("./assets/fonts/FreightTextProBook-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProBook-Regular.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProBook-Regular.woff") format("woff"),
+    url("./assets/fonts/FreightTextProBook-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "FreightTextPro";
+  src: url("./assets/fonts/FreightTextProLight-Italic.eot");
+  src: local("FreightText Pro Light Italic"),
+    local("FreightTextProLight-Italic"),
+    url("./assets/fonts/FreightTextProLight-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/FreightTextProLight-Italic.woff2") format("woff2"),
+    url("./assets/fonts/FreightTextProLight-Italic.woff") format("woff"),
+    url("./assets/fonts/FreightTextProLight-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: block;
+}

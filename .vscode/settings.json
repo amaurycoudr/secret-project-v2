@@ -1,0 +1,12 @@
+{
+  "eslint.validate": [
+    "astro",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}
